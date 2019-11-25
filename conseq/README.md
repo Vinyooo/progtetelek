@@ -1,1 +1,1 @@
-#Sorozatok kezelésének alapvető c# technikái
+# Sorozatok kezelésének alapvető c# technikái
