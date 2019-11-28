@@ -1,30 +1,37 @@
 using System;
+using System.Linq;
 
 namespace conseq
 {
     public class Sequence
     {
-        int[] t;
-        public Sequence( uint cnt, int a, int b)
+        private int[] t;
+
+        protected int[] T { get => t; set => t = value; }
+
+        public Sequence(uint cnt, int ll, int ul) => initSeq(cnt, ll, ul);
+
+        private void initSeq(uint cnt, int ll, int ul)
         {
             Random rnd = new Random();
-            t=new int[cnt];
-            for (int i=0;i<t.Length;i++)        {
-                t[i] = rnd.Next(a,b+1);
+            T = new int[cnt];
+            for (int i = 0; i < T.Length; i++)
+            {
+                T[i] = rnd.Next(ll, ul + 1);
             }
         }
+
         public Sequence(uint cnt) : this(cnt, -100, 100) {}
         public Sequence() : this(20) {}
-        public int Osszegkepzes()
-        {
-            int sum = 0;
-            for(int i=0;i<t.Length;i++)
-                    sum += t[i];
-            return sum;
-        }
-        public void Show(){
-            for(int i=0;i<t.Length;i++)
-                    System.Console.Write($"{i}. elem: {t[i]},\t");
+        //Házi feladat: Definiáljuk először a param. nélküli metódust, majd ennek 
+        //felhasználásával az egyparaméterest, majd ezzel a kétparaméterest!
+
+        /// <summary>
+        /// A t elemeinek megjelenítése
+        /// </summary>
+        public void show(){
+            for(int i=0;i<T.Length;i++)
+                    System.Console.Write($"{i}. elem: {T[i]},\t");
             System.Console.WriteLine( );
         }
     }

@@ -1,4 +1,5 @@
-# progtetelek
+# A progtetélekhez kapcsolódó és néhány egyéb, széles körben ismert egyszerű algoritmus objektum orientált megvalósítása C# nyelven
+  [C# Osztályok és Objektumok - Bevezető és Alapfogalmak.](https://github.com/edutainer/progtetelek/wiki)
 ## Néhány fontos kód snipet, melyekre szükség lesz a tételek futtatásához (is) 
 ### Vélettlen számok
 Állítsunk elő és tároljunk a véletlen számokéhoz hasonló tulajdonságokkal (?) rendelkező számokatí!
