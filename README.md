@@ -3,7 +3,7 @@
   [C# Osztályok és Objektumok - Bevezető és Alapfogalmak.](https://github.com/edutainer/progtetelek/wiki)
   
 ## Néhány fontos kód snipet, melyekre szükség lesz a tételek futtatásához (is) 
-### Vélettlen számok
+### Véletlen számok
 Állítsunk elő és tároljunk a véletlen számokéhoz hasonló tulajdonságokkal (?) rendelkező számokatí!
 ### Lemezműveletek
 ## Sorozatból egyetlen érték előállítására vonatkozó tételekre készített kódok - összesítések (aggregációk)
