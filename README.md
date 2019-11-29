@@ -1,6 +1,7 @@
 # [A progtetélekhez kapcsolódó és néhány egyéb, széles körben ismert egyszerű algoritmus objektum orientált megvalósítása C# nyelven](https://github.com/edutainer/progtetelek/wiki/Programoz%C3%A1si-t%C3%A9telek-programk%C3%B3djai)
-
+## Az OOP alapjai
   [C# Osztályok és Objektumok - Bevezető és Alapfogalmak.](https://github.com/edutainer/progtetelek/wiki)
+  
 ## Néhány fontos kód snipet, melyekre szükség lesz a tételek futtatásához (is) 
 ### Vélettlen számok
 Állítsunk elő és tároljunk a véletlen számokéhoz hasonló tulajdonságokkal (?) rendelkező számokatí!
@@ -19,7 +20,7 @@
   * #### Buborék (Bubble)
   * #### Beszúrásos (Insertion)
   * #### Kiválasztásos (Selection)
-[(Kód)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_Sum_Cnt_Dec_Ker_Kiv_Extr_Sort.cs)
+[(Kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_Sum_Cnt_Dec_Ker_Kiv_Extr_Sort.cs)
 - ### Rendezések O(n log<sub>2</sub>n) lépésben
   * #### Összefésüléses (Merge)
   * #### Gyors (Quick)
