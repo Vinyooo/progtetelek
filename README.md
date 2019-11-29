@@ -10,7 +10,7 @@
 - ### Megszámlálás tétele
 - ### Összegzés (és hasonlók) 
 - ### Eldöntés tétele
-  * #### Létezik-e elem, melyre igaz a feltétel? (exisztencia)
+  * #### Létezik-e elem, melyre igaz a feltétel? (egzisztencia)
   * #### Minden elemre igaz-e a feltétel? (univerzalitás) 
 - ### Lineáris keresés ill. kiválasztás
 - ### Szélsőérték keresés (Max/Min)
