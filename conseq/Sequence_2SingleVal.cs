@@ -25,28 +25,27 @@ namespace conseq
             while (i<T.Length && !(T[i]>ll)) i++;
             return i;
         }
-        // BinarySearch O(log n) lépésben, de csak rendezett sorozatokon!!
+        /// <summary>
+        /// Bináris (Logaritmikus) keresés.
+        /// BinarySearch O(log n) lépésben, de csak rendezett sorozatokon!!
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public int BinarySearch( int key)  
         { 
-        int min = 0;
-        int max = T.Length - 1; 
+            int min = 0;
+            int max = T.Length - 1; 
             while (min <=max)  
             {  
-            int mid = (min + max) / 2;  
-            if (key == T[mid])  
-            {  
-                    return mid;  
+                int mid = (min + max) / 2;  
+                if (key == T[mid])  
+                    return mid;
+                else if (key < T[mid])
+                    max = mid - 1;
+                else    
+                    min = mid + 1;
             }  
-            else if (key < T[mid])  
-            {  
-                max = mid - 1;  
-            }  
-            else  
-            {  
-                    min = mid + 1;  
-            }  
-        }  
-        return -1;  
+            return -1;
         }  
         /// <summary>
         /// A d-vel osztva r maradékot adó számok közül, a legnagyobb indexe
