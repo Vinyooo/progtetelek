@@ -2,7 +2,7 @@ using System;
 
 namespace conseq
 {
-    public class Sequence_Sum_Cnt_Dec_Ker_Kiv_Extr : Sequence_Sum_Cnt
+    public class Sequence_2SingleVal : Sequence_Sum_Cnt
     { // Jelenleg csak a default konstruktor létezik.
         public bool Eldontes(int ll)
         {
@@ -25,7 +25,30 @@ namespace conseq
             while (i<T.Length && !(T[i]>ll)) i++;
             return i;
         }
-                /// <summary>
+        // BinarySearch O(log n) lépésben, de csak rendezett sorozatokon!!
+        public int BinarySearch( int key)  
+        { 
+        int min = 0;
+        int max = T.Length - 1; 
+            while (min <=max)  
+            {  
+            int mid = (min + max) / 2;  
+            if (key == T[mid])  
+            {  
+                    return mid;  
+            }  
+            else if (key < T[mid])  
+            {  
+                max = mid - 1;  
+            }  
+            else  
+            {  
+                    min = mid + 1;  
+            }  
+        }  
+        return -1;  
+        }  
+        /// <summary>
         /// A d-vel osztva r maradékot adó számok közül, a legnagyobb indexe
         /// </summary>
         /// <param name="d"></param>

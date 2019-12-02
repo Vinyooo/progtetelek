@@ -1,6 +1,6 @@
 namespace conseq
 {
-    public class Sequence_Sum_Cnt_Dec_Ker_Kiv_Extr_Sort: Sequence_Sum_Cnt_Dec_Ker_Kiv_Extr
+    public class Sequence_2SingleValAndSingleSort: Sequence_2SingleVal
     { // Jelenleg csak a default konstruktor létezik.
       public void bubbleSort ()
       { // Csökkenő sorrendbe rendezi
@@ -57,5 +57,19 @@ namespace conseq
          }
       }
 
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
