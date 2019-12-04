@@ -9,10 +9,14 @@
 ### Véletlen számok
 Állítsunk elő és tároljunk a véletlen számokéhoz hasonló tulajdonságokkal (?) rendelkező számokatí!
 ### Lemezműveletek
-## Sorozatból egyetlen érték előállítására vonatkozó tételekre készített kódok - összesítések (aggregációk)
-[(Kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleVal.cs)
+## Sorozatból egyetlen érték előállítására vonatkozó tételekre készített kódok
+### Összesítés "jellegű" 
+[Összesítő kódok](https://github.com/edutainer/progtetelek/blob/master/conseq/Seqvence_Sum_Cnt.cs)
+
 - ### Megszámlálás tétele
 - ### Összegzés (és hasonlók) 
+### Keresést alkalmazó
+[(Keresést alkalmazó Kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleVal.cs)
 - ### Eldöntés tétele
   * #### Létezik-e elem, melyre igaz a feltétel? (egzisztencia)
   * #### Minden elemre igaz-e a feltétel? (univerzalitás) 
