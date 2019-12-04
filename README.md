@@ -1,6 +1,9 @@
-# [A progtetélekhez kapcsolódó és néhány egyéb, széles körben ismert egyszerű algoritmus objektum orientált megvalósítása C# nyelven](https://github.com/edutainer/progtetelek/wiki/Programoz%C3%A1si-t%C3%A9telek-programk%C3%B3djai)
+# A progtetélekhez kapcsolódó és néhány egyéb, széles körben ismert egyszerű algoritmus objektum orientált megvalósítása C# nyelven
+[Bevezető és olvasnivaló](https://github.com/edutainer/progtetelek/wiki/Programoz%C3%A1si-t%C3%A9telek-programk%C3%B3djai)
 ## Az OOP alapjai
   [C# Osztályok és Objektumok - Bevezető és Alapfogalmak.](https://github.com/edutainer/progtetelek/wiki)
+  
+  [Öröklés](https://github.com/edutainer/progtetelek/wiki/Öröklés-(Inheritance))
   
 ## Néhány fontos kód snipet, melyekre szükség lesz a tételek futtatásához (is) 
 ### Véletlen számok
