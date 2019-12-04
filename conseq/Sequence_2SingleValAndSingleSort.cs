@@ -45,17 +45,23 @@ namespace conseq
       ///
       /// Insertion Sort
       /// 
-      public void insertionSort ()
-      { // Növekvő sorrendbe rendezi
-         int i, j;
-         int N = T.Length;
-
-         for (j=1; j<N; j++) {
-            for (i=j; i>0 && T[i] < T[i-1]; i--) {
-               exchange (T, i, i - 1);
-            }
-         }
-      }
+      public void insertionSort() 
+      { 
+        int n = T.Length; 
+        for (int i = 1; i < n; ++i) { 
+            int key = T[i];
+            int j = i - 1;
+            // A rendezetlen tartomány alsó határán (i. pozícióban) lévő elemet átmásoljuk a
+            // key változóba, majd a T[0..i-1] elemek között az index tartományban lefele 
+            // haladva, eggyel feljebb mozgatjuk az elemeket amíg nagyobb mint a key. 
+            // A "megürült" helyre pedig beszúrjuk a key elemet. 
+            while (j >= 0 && T[j] > key) { 
+                T[j + 1] = T[j]; 
+                j = j - 1; 
+            } 
+            T[j + 1] = key; 
+        } 
+      } 
 
         public override bool Equals(object obj)
         {
