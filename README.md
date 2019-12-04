@@ -1,5 +1,5 @@
 # A progtetélekhez kapcsolódó és néhány egyéb, széles körben ismert egyszerű algoritmus objektum orientált megvalósítása C# nyelven
-[Bevezető és olvasnivaló](https://github.com/edutainer/progtetelek/wiki/C%23-Osztályok,-objektumok---bevezető-ismeretek-és-néhány-alapfogalom)
+[Bevezető és olvasnivaló](https://github.com/edutainer/progtetelek/wiki/Bevezetés-a-programozási-tételek-programkódjaihoz)
 ## Az OOP alapjai
   [C# Osztályok és Objektumok - Bevezető és Alapfogalmak.](https://github.com/edutainer/progtetelek/wiki/C%23-Osztályok,-objektumok---bevezető-ismeretek-és-néhány-alapfogalom)
   
