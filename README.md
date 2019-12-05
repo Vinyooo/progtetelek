@@ -1,5 +1,5 @@
 # A progtetélekhez kapcsolódó és néhány egyéb, széles körben ismert egyszerű algoritmus objektum orientált megvalósítása C# nyelven
-[Bevezető és olvasnivaló - szócikk](https://github.com/edutainer/progtetelek/wiki/Bevezetés-a-programozási-tételek-programkódjaihoz)
+[Előismeretek, bevezető és olvasnivalók - szócikk](https://github.com/edutainer/progtetelek/wiki/Bevezetés-a-programozási-tételek-programkódjaihoz)
 ## Az OOP alapjai
   [C# Osztályok és Objektumok - Bevezető és Alapfogalmak. - szócikk](https://github.com/edutainer/progtetelek/wiki/C%23-Osztályok,-objektumok---bevezető-ismeretek-és-néhány-alapfogalom)
   
@@ -7,7 +7,8 @@
   
 ## Néhány fontos kód snipet, melyekre szükség lesz a tételek futtatásához (is) 
 ### Véletlen számok
-Állítsunk elő és tároljunk a véletlen számokéhoz hasonló tulajdonságokkal (?) rendelkező számokatí!
+  - Állítsunk elő és tároljunk a véletlen számokéhoz hasonló tulajdonságokkal (?) rendelkező számokatí!
+  - [A konstruktorokban véletlenszám generátort használunk, melynek kódja az initSeq nevű private (tehát, kivülről nem hívható) metódusban található.](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence.cs)
 ### Lemezműveletek
 ## Sorozatból egyetlen érték előállítására vonatkozó tételekre készített kódok
 [Sorozatból egy érték előállítása - szócikk](https://github.com/edutainer/progtetelek/wiki/Sorozatb%C3%B3l-egy-%C3%A9rt%C3%A9k-el%C5%91%C3%A1ll%C3%ADt%C3%A1sa)
@@ -31,6 +32,7 @@
   - A MaxKiválasztásra hasonlót mondhatunk, mint a kiválasztás esetén mondtunk.
 - ### Logaritmikus keresés
   - FIGYELEM: Ez csak rendezett sorozat esetén működik.
+  - Kihasználva a rendezettséget (az indexek és a hozzárendelt értékek közötti monotonitást), a teljes tartományt egyszerűen tudjuk két egyforma hosszú részre osztani. Vagyis, ha páratlan, akk csak majdnem. Ezt rekurzíven alkalmazva, ill. megfelelően ismételve, eljutunk addig, hogy már csak egy elemet, vagy azt sem, tartalmaz az éppen felosztandó tartomány. Előbbi esetben megtaláltuk, utóbbi esetben, nincs ilyen. Mindezt log n -nel arányos számú lépésben.
 ## Sorozatból sorozat előállítására vonatkozó tételekre készített kódok.
 - ### Rendezések O(n<sup>2</sup>) lépésben - [szócikk](https://github.com/edutainer/progtetelek/wiki/Rendez%C5%91-algoritmusok)
 
