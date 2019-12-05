@@ -32,7 +32,7 @@
   - A MaxKiválasztásra hasonlót mondhatunk, mint a kiválasztás esetén mondtunk.
 - ### Logaritmikus keresés
   - FIGYELEM: Ez csak rendezett sorozat esetén működik.
-  - Kihasználva a rendezettséget (az indexek és a hozzárendelt értékek közötti monotonitást), a teljes tartományt egyszerűen tudjuk két egyforma hosszú részre osztani. Vagyis, ha páratlan, akk csak majdnem. Ezt rekurzíven alkalmazva, ill. megfelelően ismételve, eljutunk addig, hogy már csak egy elemet, vagy azt sem, tartalmaz az éppen felosztandó tartomány. Előbbi esetben megtaláltuk, utóbbi esetben, nincs ilyen. Mindezt log n -nel arányos számú lépésben.
+  - Kihasználva a rendezettséget (az indexek és a hozzárendelt értékek közötti monotonitást), a teljes tartományt egyszerűen tudjuk két egyforma hosszú részre osztani. Begállapítva, hogy a keresett érték, melyikbe tartozik. Vagyis, ha páratlan, akk csak majdnem egyforma. Majd ezt a ketté osztást ismét elvégezzük arra a tartományra, amelyikbe a keresett értek esett, ill. ezt a műveletet megfelelően tovább ismételve, eljutunk addig, hogy már csak egy elemet, vagy azt sem, tartalmaz az éppen felosztandó tartomány. Előbbi esetben megtaláltuk, utóbbi esetben, nincs ilyen. Mindezt log n -nel arányos számú lépésben.
 ## Sorozatból sorozat előállítására vonatkozó tételekre készített kódok.
 - ### Rendezések O(n<sup>2</sup>) lépésben - [szócikk](https://github.com/edutainer/progtetelek/wiki/Rendez%C5%91-algoritmusok)
 
