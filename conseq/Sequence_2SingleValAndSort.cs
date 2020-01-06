@@ -15,23 +15,23 @@ namespace conseq
         {
             int[] leftArray = new int[middle - left +1];
             int[] rightArray = new int[right - middle];
-            System.Array.Copy(T,left,leftArray,0,middle-left+1);
-            System.Array.Copy(T,middle+1,rightArray,0,right-middle);
+            System.Array.Copy(GetT(), left,leftArray,0,middle-left+1);
+            System.Array.Copy(GetT(), middle+1,rightArray,0,right-middle);
             int i = 0;
             int j = 0;
             for (int k = left; k < right + 1; k++){
                 if (i == leftArray.Length){
-                    T[k] = rightArray[j];
+                    GetT()[k] = rightArray[j];
                     j++;
                 }
                 else if (j == rightArray.Length){
-                    T[k] = leftArray[i];
+                    GetT()[k] = leftArray[i];
                     i++;
                 }else if (leftArray[i] >= rightArray[j]){ // ha == akk is a left jön.
-                    T[k] = leftArray[i];
+                    GetT()[k] = leftArray[i];
                     i++;
                 }else{
-                    T[k] = rightArray[j]; // right csak akkor jön, ha szigorúan nagyobb.
+                    GetT()[k] = rightArray[j]; // right csak akkor jön, ha szigorúan nagyobb.
                     j++;
                 }
             }
@@ -64,19 +64,19 @@ namespace conseq
         /// <param name="right"></param>
         /// <returns></returns>
         private int Partition(int left, int right){
-            int pivot = T[left];
+            int pivot = GetT()[left];
             while (true) {
-                while (T[left] < pivot) {
+                while (GetT()[left] < pivot) {
                     left++;
                 }
-                while (T[right] > pivot){
+                while (GetT()[right] > pivot){
                     right--;
                 }
                 if (left < right) {
-                    if (T[left] == T[right]) return right;
-                    int temp = T[left];
-                    T[left] = T[right];
-                    T[right] = temp;
+                    if (GetT()[left] == GetT()[right]) return right;
+                    int temp = GetT()[left];
+                    GetT()[left] = GetT()[right];
+                    GetT()[right] = temp;
                 }else {
                     return right;
                 }

@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace conseq
 {
@@ -7,8 +10,9 @@ namespace conseq
         static void Main(string[] args)
         {
             Sequence_2SingleValAndSort seq = new Sequence_2SingleValAndSort ();
-            //Overloading: egy osztályon belül, azonos névvel, de eltérő "paraméter strukrúrával"
+            // Overloading: egy osztályon belül, azonos névvel, de eltérő "paraméter strukrúrával"
             // több metódust is definiálhatunk.
+            // -----------------
             // Összeg:
             Console.WriteLine($"Sum: {seq.osszegKepzes()}");
             Console.WriteLine($"Sum: {seq.osszegKepzes(2)}");
@@ -21,7 +25,7 @@ namespace conseq
             Console.WriteLine($"Létezik 80-nál nagyobb elem: {seq.Eldontes(80) }");
             // "Eldöntés 2":
             Console.WriteLine($"Minden elem 80-nál nagyobb: {seq.Eldontes2(80) }");
-            int i=seq.kivalasztas(80);
+            int i=seq.kivalasztas_gt(80);
             // Kiválasztás:
             Console.WriteLine($"Kiválasztás: Az első 80-nál nagyobb elem, a(z) {i}. Ha nem 0..19 tartományba esik, akk \"elhasalt\" a program!!");
             // LinKer:
@@ -59,6 +63,41 @@ namespace conseq
             Console.WriteLine("quickSort - növekvő");
             seq.Quick_Sort(0,seq.megszamlalas()-1);
             seq.show();
+            Console.WriteLine("quickSort - növekvő");
+            Sec2OtherSec s2s= new Sec2OtherSec();
+            Console.WriteLine("Lista:");
+            s2s.show();
+            List<int> lista = s2s.metszet(arr2: new int[] {-10, -20, -30, -40, -50, 10, 20, 30, 40, 50 });
+            Console.WriteLine("Metszetlista:");
+            Console.WriteLine(string.Join(", ",lista.ToArray()) );
+            lista = s2s.unio(arr2: new int[] {-10, -20, -30, -40, -50, 10, 20, 30, 40, 50 });
+            Console.WriteLine("Uniolista:");
+            Console.WriteLine(string.Join(", ",lista.ToArray()) );
+            ///-------------------------
+            lista = s2s.kivalogatas_paritas();
+            Console.WriteLine("Kiválogatás:");
+            //StringBuilder builder = new StringBuilder();
+            foreach (int idx in lista)
+            {
+                Console.Write($"{idx.ToString()}. > {s2s.GetT()[idx].ToString()},\t ");
+            }
+            Console.WriteLine();
+            ///-------------------------
+            List<int> lst;
+            lista = s2s.szetvalogatas_paritas(out lst);
+            Console.WriteLine("Szétválogatás (páros):");
+            //StringBuilder később.
+            foreach (int idx in lista)
+            {
+                Console.Write($"{idx.ToString()}. > {s2s.GetT()[idx].ToString()},\t ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Szétválogatás (páratlan):");
+            foreach (int idx in lst)
+            {
+                Console.Write($"{idx.ToString()}. > {s2s.GetT()[idx].ToString()},\t ");
+            }
+            Console.WriteLine();
         }
     }
 }

@@ -7,17 +7,25 @@ namespace conseq
     {
         private int[] t;
 
-        protected int[] T { get => t; set => t = value; }
+        public int[] GetT()
+        {
+            return t;
+        }
+
+        protected void SetT(int[] value)
+        {
+            t = value;
+        }
 
         public Sequence(uint cnt, int ll, int ul) => initSeq(cnt, ll, ul);
 
         private void initSeq(uint cnt, int ll, int ul)
         {
             Random rnd = new Random();
-            T = new int[cnt];
-            for (int i = 0; i < T.Length; i++)
+            SetT(new int[cnt]);
+            for (int i = 0; i < GetT().Length; i++)
             {
-                T[i] = rnd.Next(ll, ul + 1);
+                GetT()[i] = rnd.Next(ll, ul + 1);
             }
         }
 
@@ -30,8 +38,8 @@ namespace conseq
         /// A t elemeinek megjelenítése
         /// </summary>
         public void show(){
-            for(int i=0;i<T.Length;i++)
-                    System.Console.Write($"{i}. elem: {T[i]},\t");
+            for(int i=0;i< GetT().Length;i++)
+                    System.Console.Write($"{i}. elem: {GetT()[i]},\t");
             System.Console.WriteLine( );
         }
     }

@@ -11,9 +11,9 @@ namespace conseq
         /// <returns>sum</returns>
         public int osszegKepzes()
         {
-            var sum = T[0];
-            for(int i=1;i<T.Length;i++)
-                    sum += T[i];
+            var sum = GetT()[0];
+            for(int i=1;i< GetT().Length;i++)
+                    sum += GetT()[i];
             return sum;
         }
         /// <summary>
@@ -21,7 +21,7 @@ namespace conseq
         /// </summary>
         /// <param name="d"></param>
         /// <returns>sum</returns>
-        public int osszegKepzes(int d) => (from int v in T
+        public int osszegKepzes(int d) => (from int v in GetT()
                                            where v % d == 0
                                            select v).Sum();
         /// <summary>
@@ -33,7 +33,7 @@ namespace conseq
         public int osszegKepzes(int d, int r)
         {
             int sum = 0;
-            foreach(int v in T)
+            foreach(int v in GetT())
                 if(v%d==r)
                     sum += v;
             return sum;
@@ -44,7 +44,7 @@ namespace conseq
         /// <returns></returns>
         public int megszamlalas()
         {
-            return T.Length;
+            return GetT().Length;
         }
         /// <summary>
         /// t adott értéknél nagyobb elemeinek száma
@@ -53,7 +53,7 @@ namespace conseq
         /// <returns></returns>
         public int megszamlalas(int ll)
         {
-            return (from v in T
+            return (from v in GetT()
                     where ll < v
                     select v).Count();
         }
@@ -63,7 +63,7 @@ namespace conseq
         /// <param name="ll"></param>
         /// <param name="ul"></param>
         /// <returns></returns>
-        public int megszamlalas(int ll, int ul) => (from v in T
+        public int megszamlalas(int ll, int ul) => (from v in GetT()
                                                     where ll < v && v < ul
                                                     select v).Count();
     }

@@ -5,12 +5,12 @@ namespace conseq
       public void bubbleSort ()
       { // Csökkenő sorrendbe rendezi
          int i, j;
-         int N = T.Length;
+         int N = GetT().Length;
 
          for (j=N-1; j>0; j--) {
             for (i=0; i<j; i++) {
-               if (T [i] < T [i + 1])
-                  exchange (T, i, i + 1);
+               if (GetT()[i] < GetT()[i + 1])
+                  exchange (GetT(), i, i + 1);
             }
          }
       }
@@ -34,12 +34,12 @@ namespace conseq
       public void selectionSort ()
       { // Növekvő sorrendbe rendezi
          int i;
-         int N = T.Length;
+         int N = GetT().Length;
 
          for (i=0; i < N-1; i++) {
-            int k = Min (T, i);
+            int k = Min (GetT(), i);
             if (i != k)
-               exchange (T, i, k);
+               exchange (GetT(), i, k);
          }
       }
       ///
@@ -47,19 +47,19 @@ namespace conseq
       /// 
       public void insertionSort() 
       { 
-        int n = T.Length; 
+        int n = GetT().Length; 
         for (int i = 1; i < n; ++i) { 
-            int key = T[i];
+            int key = GetT()[i];
             int j = i - 1;
             // A rendezetlen tartomány alsó határán (i. pozícióban) lévő elemet átmásoljuk a
             // key változóba, majd a T[0..i-1] elemek között az index tartományban lefele 
             // haladva, eggyel feljebb mozgatjuk az elemeket amíg nagyobb mint a key. 
             // A "megürült" helyre pedig beszúrjuk a key elemet. 
-            while (j >= 0 && T[j] > key) { 
-                T[j + 1] = T[j]; 
+            while (j >= 0 && GetT()[j] > key) {
+                    GetT()[j + 1] = GetT()[j]; 
                 j = j - 1; 
-            } 
-            T[j + 1] = key; 
+            }
+                GetT()[j + 1] = key; 
         } 
       } 
 

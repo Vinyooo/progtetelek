@@ -8,7 +8,7 @@ namespace conseq
         {
             // T tulajdonság: 80-nél nagyobb szám
             
-            return kivalasztas(ll)<T.Length;
+            return kivalasztas_gt(ll)< GetT().Length;
             // if (van==true)Console.WriteLine("Van benne 80tól nagyobb elem");
             // else Console.WriteLine("Nincs benne ilyen elem");
         }
@@ -16,13 +16,19 @@ namespace conseq
         {
             // T tulajdonság: 80-nál nagyobb szám
             int i=0;
-            while (i<T.Length && (T[i]>ll)) i++;
-            return !(i<T.Length);
+            while (i< GetT().Length && (GetT()[i]>ll)) i++;
+            return !(i< GetT().Length);
         }
-        public int kivalasztas(int ll)
+        public int kivalasztas_gt(int ll)
         {
             int i=0;
-            while (i<T.Length && !(T[i]>ll)) i++;
+            while (i< GetT().Length && !(GetT()[i]>ll)) i++;
+            return i;
+        }
+        public int kivalasztas_eq(int ll)
+        {
+            int i=0;
+            while (i< GetT().Length && !(GetT()[i]==ll)) i++;
             return i;
         }
         /// <summary>
@@ -34,13 +40,13 @@ namespace conseq
         public int BinarySearch( int key)  
         { 
             int min = 0;
-            int max = T.Length - 1; 
+            int max = GetT().Length - 1; 
             while (min <=max)  
             {  
                 int mid = (min + max) / 2;  
-                if (key == T[mid])  
+                if (key == GetT()[mid])  
                     return mid;
-                else if (key < T[mid])
+                else if (key < GetT()[mid])
                     max = mid - 1;
                 else    
                     min = mid + 1;
@@ -58,12 +64,12 @@ namespace conseq
          //   Int32 max = Int32.MinValue;
             int maxi;
             int i = 0;
-            while(T[i]%d!=r) i++;
+            while(GetT()[i]%d!=r) i++;
             maxi=i;
-            if(maxi>=T.Length) return maxi;
-            for (; i < T.Length; i++)
+            if(maxi>= GetT().Length) return maxi;
+            for (; i < GetT().Length; i++)
             {
-                if (T[i]%d==r && T[maxi]<T[i])
+                if (GetT()[i]%d==r && GetT()[maxi]< GetT()[i])
                     maxi= i;
             }
             return maxi;
