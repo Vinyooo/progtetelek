@@ -39,11 +39,11 @@
   * #### Buborék (Bubble)
   * #### Beszúrásos (Insertion)
   * #### Kiválasztásos (Selection)
-[(Az O(n<sup>2</sup>) "költségű" kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSingleSort.cs)
+  [(Az O(n<sup>2</sup>) "költségű" rendező kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSingleSort.cs)
 - ### Rendezések O(n log<sub>2</sub>n) lépésben
   * #### Összefésüléses (Mergesort)
   * #### Gyors (Quick)
-  [(Az O(n log<sub>2</sub>n) "költségű" kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSort.cs)
+  [(Az O(n log<sub>2</sub>n) "költségű" rendező kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSort.cs)
 - ### Rendezett sorozat elemeiből egy közös rendezett sorozat 
   * #### Összefésülés (Merge) - O(n)  (Multihalmaz Unio). A Merge metódus megtalálható az [(Mergesort kódjában)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSort.cs)
   * #### Többszörözött elemeket nem tartalmazó sorozatok egyesítése, ahol az eredményt tartalmazó sorozat sem tartalmaz többbszörözött elemeket (Unio)
