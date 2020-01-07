@@ -39,7 +39,7 @@
   * #### Buborék (Bubble)
   * #### Beszúrásos (Insertion)
   * #### Kiválasztásos (Selection)
-[(Kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSingleSort.cs)
+[(Az O(n<sup>2</sup>) "költségű" kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSingleSort.cs)
 - ### Rendezések O(n log<sub>2</sub>n) lépésben
   * #### Összefésüléses (Mergesort)
   * #### Gyors (Quick)
