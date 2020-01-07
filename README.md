@@ -44,8 +44,15 @@
   * #### Összefésüléses (Merge)
   * #### Gyors (Quick)
 [(Kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSort.cs)
-- ### Rendezett sorozat elemeiből egy közös rendezett sorozat (Unio)
-  * #### Összefésülés (Merge) - O(n)
+- ### Rendezett sorozat elemeiből egy közös rendezett sorozat 
+  * #### Összefésülés (Merge) - O(n)  (Multihalmaz Unio)
+  * #### Többszörözött elemeket nem tartalmazó sorozatok egyesítése, ahol az eredményt tartalmazó sorozat sem tartalmaz többbszörözött elemeket (Unio)
+  * #### Metszet
+  * #### Kiválogatás (a mintaprogram a páros számokat válogatja ki)
+  * #### Szétválogatás (a mintaprogram a páros- ill. páratlan számokat válogatja ki/szét)
+  [(Kódok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sec2OtherSec.cs)
+
+
 
 
 
