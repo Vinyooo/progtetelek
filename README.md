@@ -5,7 +5,7 @@
   
   [Öröklés - szócikk](https://github.com/edutainer/progtetelek/wiki/Öröklés-(Inheritance))
   
-## Néhány fontos kód snipet, melyekre szükség lesz a tételek futtatásához (is) 
+## Néhány fontos - kód - snipet, melyekre szükség lesz a tételek futtatásához (is) 
 ### Véletlen számok
   - Állítsunk elő és tároljunk a véletlen számokéhoz hasonló tulajdonságokkal (?) rendelkező számokatí!
   - [A konstruktorokban véletlenszám generátort használunk, melynek kódja az initSeq nevű private (tehát, kivülről nem hívható) metódusban található.](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence.cs)
