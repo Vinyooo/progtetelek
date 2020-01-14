@@ -48,8 +48,8 @@
   * #### Összefésülés (Merge) - O(n)  (Multihalmaz Unio). A Merge metódus megtalálható az [(Mergesort kódjában)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sequence_2SingleValAndSort.cs)
 - ### Halmazműveletek
   * #### Többszörözött elemeket nem tartalmazó sorozatok egyesítése, ahol az eredményt tartalmazó sorozat sem tartalmaz többbszörözött elemeket (Unio)
-  * #### Sorozat elemeinek metszete
-- ### Válogatás egy másik sorozatba
+  * #### Sorozat közös elemei (metszet)
+- ### Válogatás más sorozat(ok)ba
   * #### Kiválogatás (a mintaprogram a páros számokat válogatja ki)
   * #### Szétválogatás (a mintaprogram a páros- ill. páratlan számokat válogatja ki/szét)
   [(Az utóbbi négy algoritmust megvalósító metódusok)](https://github.com/edutainer/progtetelek/blob/master/conseq/Sec2OtherSec.cs)
